@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transform with Scale</title>
+	<style type="text/css">
+
+		.container{
+			width: 1200px;
+			background-color: gray;
+
+/*			rem(root element's font size) 1rem = 16px*/
+			margin: 3rem 0;
+		}
+
+		.container .square{
+			width: 150px;
+			height: 70px;
+			background-color: green;
+			color: #fff;
+			font-size: 20px;
+
+			text-align: center;
+			line-height: 70px;
+
+			border-radius: 3px;
+			transition-property: transform;
+			transition-duration: .5s;
+			
+			transition-timing-function: linear;
+			
+		}
+
+		#scale:hover{
+			transform: scale(2);
+		}
+
+		#scalexy:hover{
+			transform: scale(2,3);
+		}
+
+		#scalex:hover{
+			transform: scaleX(3);
+		}
+
+		#scaley:hover{
+			transform: scaleY(2);
+		}
+
+
+
+
+		
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div id="scale" class="square">DIV 1 XY </div>
+	</div>
+
+	<div class="container">
+		<div id="scalexy" class="square">DIV 2 X,Y </div>
+	</div>
+
+	<div class="container">
+		<div id="scalex" class="square">DIV  3 X  </div>
+	</div>
+
+	<div class="container">
+		<div id="scaley" class="square">DIV 4 Y </div>
+	</div>
+
+	
+
+
+</body>
+</html>
+
+<!-- 17RT -->

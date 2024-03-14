@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Effect</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+
+		body{
+            font-family: sans-serif;
+			height: 100vh;
+            background-color: #000;
+
+            display: grid;
+            place-items: center;
+
+			padding: 0;
+			margin: 0;
+
+		}     
+
+        .box{
+            background: url(./img/circlebg.jpg);
+            -webkit-background-clip: text ;
+
+            animation-name: myani;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+
+        }
+
+        .box h1{
+            color: transparent;
+            font-size: 120px;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            white-space: nowrap;
+
+            -webkit-text-stroke: 2px steelblue;
+        }
+
+        @keyframes myani{
+            from{
+                                /* left top */
+                background-position: 0 0 ;
+            }
+
+            to{
+                                    /* left top */
+                background-position:800px  0;
+            }
+        }
+
+              
+	</style>
+</head>
+<body>
+
+
+
+    <div class="box">
+        <h1>Hello Myanmar</h1>
+    </div>
+
+   
+
+</body>
+</html>
+
+

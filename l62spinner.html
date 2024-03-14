@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spinner by SVG</title>
+	<style type="text/css">
+
+		body{
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			padding: 0;
+			margin: 0;
+		}
+
+		.spinner{
+
+			width: 30px;
+			height: 30px;
+
+			/*animation-name: myspinner;
+			animation-duration: 1000ms;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;*/
+
+
+/*			Short Hand*/
+/*						name duration itc atf*/
+			animation: myspinner 3s infinite linear;
+		}
+
+
+		@keyframes myspinner{
+			0%{
+				transform: rotate(0deg) scale(1);
+			}
+
+			25%{
+				transform: rotate(360deg) scale(1);
+			}
+
+			50%{
+				transform: rotate(360deg) scale(1.5);
+			}
+
+			75%{
+				transform: rotate(0deg) scale(1.5);
+			}
+
+			100%{
+				transform: rotate(0deg) scale(1);
+			}
+		}
+
+		
+
+
+
+	</style>
+</head>
+<body>
+
+	<img src="./img/loader.svg" class="spinner" alt="loader">
+
+</body>
+</html>
+

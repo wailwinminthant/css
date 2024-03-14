@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Effect</title>
+	<style type="text/css">
+
+
+		body{
+			background-color: #000;
+			font-family: sans-serif;
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.box{
+			width: 200px;
+			height: 200px;
+			font-size: 20px;
+			font-weight: 700;
+			text-transform: uppercase;
+/*			color: #000;*/
+			letter-spacing: 5px;
+			text-align: center;
+			line-height: 200px;
+
+			position: relative;
+
+		}
+
+		.box:before{
+			content: '';
+
+			/*width: 100%;
+			height: 100%;*/
+			border: 3px solid steelblue;
+			border-radius: 3px;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+
+			transition: transform .3s;
+
+		}
+
+		.box::after{
+			content: '';
+
+			width: 100%;
+			height: 100%;
+			background-color:#fff ;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			transform: rotate(45deg);
+			z-index: -1;
+
+
+			transition: transform .3s;
+
+		}
+
+		.box:hover::before{
+			transform: rotate(45deg);
+		}
+
+		.box:hover::after{
+			transform: rotate(45deg) scale(0.7);
+		}
+
+		.box:hover{
+			color: steelblue;
+		}
+		
+
+	</style>
+</head>
+<body>
+
+	<div class="box">Hover Me</div>
+
+
+	
+</body>
+</html>
+
+<!-- 27BB -->

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex Direction</title>
+	<style type="text/css">
+
+		body{
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}	
+
+		.container{
+			width: 1200px;
+			height: 800px;
+			background-color: gray;
+
+			/* display: flex;
+
+			justify-content: start;
+			align-items: center; */
+			
+			
+
+
+/*			display: flex;*/
+/*			justify-content: space-between; လုံးဝဟိုဘက်ဒီဘက်ကိုကန်ထုတ်မယ်*/
+/*			justify-content: space-around;  center ချ နှစ်ဖက်ညီတူမျှတူကန်  */
+/*			align-items: center; */
+			
+/*			display: flex;*/
+/*			justify-content: center;*/
+/*			align-items: end;*/
+
+
+/*			display: flex;*/
+/*			ver center*/
+/*			justify-content: center;*/
+
+/*			hoz center*/
+/*			align-items: center;*/
+/*			flex-direction: column;*/
+
+/*
+			display: flex;
+			justify-content: space-between;
+			align-items: start;
+			align-items: end;
+
+			flex-direction: column;*/
+
+
+		/*	display: flex;
+
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;*/
+
+
+/*			display: flex;*/
+/*			flex-direction: column-reverse;*/
+/*			flex-direction: row-reverse;*/
+
+
+
+			display: flex;
+			flex-direction: column;
+/*			justify-content: end;*/
+
+
+
+			flex-wrap: wrap; 
+		}
+
+		.container > *{
+			width: 300px;
+			height: 100px;
+		}
+
+		.container div:nth-of-type(odd){
+			background-color:steelblue ;
+		}
+
+		.container div:nth-of-type(even){
+			background-color:skyblue ;
+		}
+
+		/*.div1{
+			 align-items: start; 
+		}*/
+
+		/*.div2{
+		 align-items: center; /
+		}*
+
+		/* .div3{
+		
+
+		}
+
+		.div4{
+	
+
+		}
+
+		.div5{
+		
+
+		}
+
+		.div6{
+		
+
+		}
+
+		.div7{
+
+		} */
+
+/*		.div8{
+			align-self: center;
+		}*/
+
+
+
+/*			.div9{
+	flex-grow: 1;
+
+		}*/
+
+		 .div10 {
+/*			display: flex; ver*/
+/*		align-self: end;*/
+
+/*		Note : 1,0*/
+		flex-grow: 0;
+		} 
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="div1">This is DIV 1</div>
+		<div class="div2">This is DIV 2</div>
+		<div class="div3">This is DIV 3</div>
+		<div class="div4">This is DIV 4</div>
+		<div class="div5">This is DIV 5</div>
+		<div class="div6">This is DIV 6</div>
+		<div class="div7">This is DIV 7</div>
+		<div class="div8">This is DIV 8</div>
+		<div class="div9">This is DIV 9</div>
+		<div class="div10">This is DIV 10</div>
+
+	</div>
+
+
+
+	
+
+</body>
+</html>
+
+
+<!-- 
+	
+	Flex Wrap သည် ပေးထားသော width, height တို့ကို မပျောက်စေပဲ နောက်တစ်ကြောင်းထပ်ဆင်းစေတယ် 
+
+	Flex-direction => row(default)
+	justify-content => horizontal
+	align-items  => vertical
+
+	Flex-direction => column
+	justify-content => vertical
+	align-items  => horizontal
+
+
+
+-->
+
+<!-- 2FD -->	

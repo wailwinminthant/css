@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perspective Origin</title>
+	<style type="text/css">
+
+		*{
+			perspective: 500px;
+		}
+
+
+		body{
+			height: 100vh;
+
+			display: grid;
+			place-items: center
+		}
+
+		.container{
+			/* perspective: 1500px; */
+
+		perspective-origin: center;
+		
+/*		perspective-origin: right;*/
+/*		perspective-origin: right bottom;*/
+
+		
+		/* perspective-origin: 0; */ /*left center*/
+		/* perspective-origin:  0 0;*/ /*left top*/
+/*		perspective-origin: 0 bottom;*/
+/*		perspective-origin: 50% bottom;*/
+/*		perspective-origin: 100% bottom;*/
+/*		perspective-origin: 0 top;*/
+		/* perspective-origin: 50% top; */
+
+		}
+
+
+		.container img{
+			width: 300px;
+
+			transition: transform 1s linear;
+
+		}
+
+		.container img:hover{
+/*			transform: translateZ(100px);*/
+			transform: translateZ(100px); /*+ Zoom in - zoom out*/
+		}
+
+
+
+
+
+		
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<img src="./img/cutedog.jpg" alt="dog" />
+	</div>
+
+
+
+	
+
+</body>
+</html>
+
+
+
+<!-- 19DD -->

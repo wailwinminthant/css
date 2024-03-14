@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keyframes</title>
+	<style type="text/css">
+
+		body{
+			padding: 0;
+			margin: 0;
+		}
+
+		.box1{
+			width: 150px;
+			height: 150px;
+			background-color: steelblue;
+
+			animation-name: myani;
+			animation-duration: 5s;
+			animation-fill-mode: forwards;
+
+/*			animation-iteration-count: 2;*/
+			animation-iteration-count: infinite;
+
+
+/*			animation-timing-function: ease;*/
+/*			animation-timing-function: ease-in;*/
+/*			animation-timing-function: ease-out;*/
+/*			animation-timing-function: ease-in-out;*/
+			animation-timing-function: linear;
+
+
+			/* animation-direction: normal; */
+			/* animation-direction: reverse; */
+
+			animation-direction: alternate;
+			/* animation-direction: alternate-reverse; */
+
+			}
+
+			@keyframes myani{
+
+				0%{
+					transform: translate(0px);
+				}
+
+
+				50%{
+					transform: translateX(600px);
+				}
+
+
+				100%{
+					transform: translate(600px,600px);
+				}
+
+			};
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="box1"></div>
+
+</body>
+</html>
+

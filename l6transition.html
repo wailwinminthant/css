@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition</title>
+	<style type="text/css">
+
+		.div1{
+			width: 300px;
+			height: 100px;
+			background-color: steelblue;
+			color: #fff;
+			font-size: 20px;
+			/*text-align: center;
+			line-height: 100px*/;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+
+/*			short hand*/
+/*						property       duration*/
+/*			transition: background-color 5s;*/
+/*			transition: background-color 5000ms;*/
+			
+
+			transition-property: background-color;
+/*			transition-duration: 2s;*/
+/*			transition-duration: .5s;*/
+/*			transition-duration: 0.5s;*/
+			
+			transition-duration: 3000ms;
+		}
+
+		.div1:hover{
+			background-color: green;
+		}
+
+
+
+		.div2{
+			width: 300px;
+			height: 100px;
+			background-color: steelblue;
+			color: #fff;
+			font-size: 20px;
+			/*text-align: center;
+			line-height: 100px*/;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+/*			transition:all 2s;*/
+/*					property duration delay*/
+/*			transition:all    2s    5s;*/
+
+			transition-property: all;
+			transition-duration: 2s;
+			transition-delay: 5s;
+
+
+
+/*			transition-property: width;*/
+/*			transition-property: width,background-color;*/
+
+			/*transition-property:width ,background-color,color;
+			transition-duration: 2s;
+			transition-delay: 3s;*/
+
+
+/*			transition: width 1s,background-color 2s,color 3s ;*/
+
+
+
+		}
+
+		.div2:hover{
+			width: 600px;
+			background-color: green;
+			color: #000;
+		}
+
+
+		
+	</style>
+</head>
+<body>
+
+	<div class="div1">
+		CSS Transition DIV 1
+	</div>
+
+	<hr/>
+
+	<div class="div2">
+		CSS Transition DIV 2
+	</div>
+
+	<hr/>
+	
+
+</body>
+</html>
+
+
+<!-- 2s နောက်က 5s က ၁ ကနေ ၅ s ထိရေတွက်တယ်(စောင့်တဲ့အချိန်) -->
+
+
+<!-- 10TC -->

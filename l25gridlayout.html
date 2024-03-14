@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sample Grid Layout</title>
+		<style type="text/css">
+			
+			body{
+				height: 100vh;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.container{
+				width: 1200px;
+				height: 800px;
+				background-color: silver;
+
+				display: grid;
+
+				grid-template-columns: repeat(5, 100px);
+				grid-template-rows:repeat(5, 100px) ;
+
+
+				grid-gap: 10px;
+
+			}
+
+			.container div:nth-of-type(odd){
+				background-color: steelblue;
+			}
+
+			.container div:nth-of-type(even){
+				background-color: skyblue;
+			}
+
+			.div1{
+				grid-column-start:1 ;
+				grid-column-end: 6; /* start 1 to 12  */
+			}
+
+			.div2{
+				grid-column-start:1 ;
+				grid-column-end: 2;
+				grid-row-start:2 ; /*because of div1( div1 place row no.1 so it start row no.2 )*/
+				grid-row-end: 5;
+			}
+
+			.div3{
+				grid-column-start:2 ;
+				grid-column-end: 5;
+				grid-row-start:2 ;
+				grid-row-end: 5;
+			}
+
+			.div4{
+				grid-column-start:5 ;
+				grid-column-end: 6;
+				grid-row-start:2 ;
+				grid-row-end: 5;
+			}
+
+			.div5{
+				grid-column-start:1 ;
+				grid-column-end: 6;
+			}
+
+			.div1{
+				display: flex;
+				
+				justify-content: center;
+				align-items: center;
+			}
+
+			.div2{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			.div3{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.div4{
+				display: flex;
+				flex-direction: column-reverse;
+			}
+
+			.div5{
+				display: flex;
+				flex-direction: column;
+				justify-content: end;
+			}
+
+
+		</style>
+	</head>
+	<body>
+
+
+		<div class="container">
+			
+
+			<div class="div1">This is DIV 1</div>
+			<div class="div2">
+				<div>This is DIV 2</div>
+				<div>This is DIV 2</div>
+			</div>
+			<div class="div3">
+				<div>This is DIV 3</div>
+				<div>This is DIV 3</div>
+			</div>
+			<div class="div4">
+				<div>This is DIV 4 a</div>
+				<div>This is DIV 4 b</div>
+			</div>
+			<div class="div5">
+				<div>This is DIV 5 a</div>
+				<div>This is DIV 5 b</div>
+			</div>
+				
+			
+
+
+
+
+
+		</div>
+
+
+	</body>
+</html>

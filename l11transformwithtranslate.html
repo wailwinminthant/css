@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transform with Translate</title>
+	<style type="text/css">
+
+		.container{
+			width: 1200px;
+			background-color: gray;
+
+/*			rem(root element's font size) 1rem = 16px*/
+			margin: 3rem 0;
+		}
+
+		.container .square{
+			width: 150px;
+			height: 70px;
+			background-color: red;
+			color: #fff;
+			font-size: 20px;
+
+			text-align: center;
+			line-height: 70px;
+
+			border-radius: 3px;
+			transition-property: transform;
+			transition-duration: .5s;
+			
+			transition-timing-function: linear;
+			
+		}
+
+		#translate:hover{
+			transform: translate(100%);
+		}
+
+		#translatex:hover{
+			transform: translateX(100%);
+		}
+
+		#translatey:hover{
+			transform: translateY(-70px);
+		}
+
+		#translatexy:hover{
+/*			transform: translate(-100%,-50%);*/
+			transform: translateX(50%) translateY(100%);
+		}
+
+
+
+
+
+
+
+ 
+
+		
+
+
+
+
+		
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div id="translate" class="square">DIV 1 X </div>
+	</div>
+
+	<div class="container">
+		<div id="translatex" class="square">DIV 2 X </div>
+	</div>
+
+	<div class="container">
+		<div id="translatey" class="square">DIV  3 Y  </div>
+	</div>
+
+	<div class="container">
+		<div id="translatexy" class="square">DIV 4 XY </div>
+	</div>
+
+	
+
+
+</body>
+</html>
+
+<!-- 17RT -->

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Counter</title>
+	<style type="text/css">
+
+		body{
+			counter-reset: idx;
+		}
+
+		h2::before{
+			counter-increment: idx;
+/*			content: counter(idx) " : ";*/
+			content: "Chapter" counter(idx) " : ";
+		}
+
+		h2{
+			counter-reset: subidx;
+		}
+
+		h3::before{
+			counter-increment: subidx;
+			content:  "Lesson:"counter(idx)" . " counter(subidx) " : ";
+		}
+
+		h3{
+			counter-reset: sub-subidx;
+		}
+
+		h4::before{
+			counter-increment: sub-subidx;
+			content:  "Lesson:"counter(idx)" . " counter(subidx)" . "counter(sub-subidx) " : ";
+		}
+
+	</style>
+</head>
+<body>
+		
+		<h1>DTL Lessons</h1>
+
+		<h2>Web Development Foundation</h2>
+			<h3>HTML</h3>
+			<h3>CSS</h3>
+			<h3>Javascript</h3>
+			<h3>Bootstrap</h3>
+			<h3>github</h3>
+		
+		<h2>CSS Class</h2>
+			<h3>Css intermediate</h3>
+			<h3>Bootstrap</h3>
+			<h3>tailwind css</h3>
+
+		<h2>Javascript Class</h2>
+			<h3>jquery</h3>
+			<h3>Javascript intermediate</h3>
+			<h3>reactjs</h3>
+			<h3>nodejs</h3>
+
+		<h2>Database Class</h2>
+			<h3>mysql</h3>
+			<h3>mongodb</h3>
+
+		<h2>PHP Class</h2>
+			<h3>framework</h3>
+				<h4>Laravel</h4>
+				<h4>CakePHP</h4>
+	
+		
+
+</body>
+</html>
+
+
+<!-- 4CT -->

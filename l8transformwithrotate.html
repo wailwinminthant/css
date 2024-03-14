@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transform with Rotate</title>
+	<style type="text/css">
+
+		.container{
+			width: 1200px;
+			background-color: gray;
+
+/*			rem(root element's font size) 1rem = 16px*/
+			margin: 3rem 0;
+		}
+
+		.container .square{
+			width: 150px;
+			height: 70px;
+			background-color: red;
+			color: #fff;
+			font-size: 20px;
+
+			text-align: center;
+			line-height: 70px;
+
+			border-radius: 3px;
+			transition-property: transform;
+			transition-duration: .7s;
+			transition-timing-function: linear;
+			
+		}
+
+		#rotate:hover{
+/*			transform: rotate(720deg);*/
+/*			transform: rotate(-4turn);*/
+
+/*			400grad=360deg=1turn*/
+			transform: rotate(-400grad);
+		}
+
+		#rotatex:hover{
+			transform: rotateX(90deg);/*X ကို ပုံသေထားပြီး Y ကလှည့်မယ်*/
+		}
+
+		#rotatey:hover{
+			transform: rotateY(45deg);/*Y ကို ပုံသေထားပြီး X ကလှည့်မယ်*/
+		}
+
+
+
+
+
+
+		
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div id="rotate" class="square">DIV 1 XY </div>
+	</div>
+
+	<div class="container">
+		<div id="rotatex" class="square">DIV 2 X </div>
+	</div>
+
+	<div class="container">
+		<div id="rotatey" class="square">DIV 3 Y </div>
+	</div>
+
+	
+
+
+</body>
+</html>
+
+<!-- 17RT -->

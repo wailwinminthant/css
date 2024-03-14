@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>button Effect</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+
+		body{
+            font-family: sans-serif;
+			height: 100vh;
+            background-color: #000;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			padding: 0;
+			margin: 0;
+		}
+
+		.download-btn{
+			width: 400px;
+            height: 100px;
+			background-color: steelblue;
+			color: #fff;
+            text-decoration: none;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 20px;
+
+
+/*            the root element's font size*/
+/*            1rem = 16px*/
+            font-size: 2.5rem; /* 40px  */
+            font-weight: bold;
+
+		}
+
+
+        .download-btn:hover{
+            color: #000;
+        }
+
+
+        .download-btn:hover{
+
+            background-image: linear-gradient(
+                134.5deg,
+                transparent,
+                #f4f4f4,
+                transparent,
+                #f4f4f4,
+                transparent,
+                #f4f4f4,
+                transparent,
+                #f4f4f4,
+                transparent,
+                #f4f4f4,
+                transparent,
+                #f4f4f4
+            );
+
+            background-size: 30%;
+            animation: myani 5s linear infinite;
+        }
+
+
+
+              
+        @keyframes myani{
+            from{
+                background-position: 0 0;
+            }   
+
+            to{
+                background-position: 400px 0;
+            }
+        }
+		
+
+        
+	</style>
+</head>
+<body>
+
+
+
+	<a href="#" class="download-btn">Hover Me</a>
+
+
+</body>
+</html>
+
+
+
